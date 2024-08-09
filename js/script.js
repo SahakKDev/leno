@@ -6,3 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("active");
   });
 });
+
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".nav");
+
+  if (window.scrollY > 0) {
+    navbar.classList.add("nav--scroll");
+  } else {
+    navbar.classList.remove("nav--scroll");
+  }
+});
